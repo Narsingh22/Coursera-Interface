@@ -1,0 +1,858 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family:  sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header > img {
+    width: 73.5%;
+    height: 100vh;
+    position: relative;
+}
+
+h1.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+}
+
+.container:hover {
+    background: #333;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.navbar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 21%;
+}
+
+.navbar1:hover {
+    color: #000;
+}
+
+.navbar1 ul a::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 20px;
+    visibility: hidden;
+}
+
+.navbar1 ul a:hover::after {
+    visibility: visible;
+    animation: nav1 .5s linear;
+}
+
+@keyframes nav1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.stock-info ul li a{
+    margin-left: 22px;
+    font-size: 12px;
+}
+
+.navbar2 ul a {
+    color: #000;
+    font-size: 12px;
+    margin-right: 22px;
+}
+
+.navbar2 ul a::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 20px;
+    visibility: hidden;
+}
+
+.navbar2 ul a:hover::after {
+    visibility: visible;
+    animation: nav2 .5s linear;
+}
+
+@keyframes nav2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.service .o a {
+    background-color: black;
+    padding: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+.discount-info a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+.discount {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sale {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.explore {
+    font-size: 12px;
+}
+
+.shop-now a{
+    font-size: 12px;
+    position: relative;
+}
+
+.shop-now a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 20px;
+    opacity: 0.6;
+    background-color: #000;
+}
+
+.shop-now a:hover::after {
+    animation: border .5s linear;
+}
+
+@keyframes border {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.advertising{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8vh 0;
+    gap: 7%;
+}
+
+.modular,
+.making,
+.celebrity {
+    display: flex;
+    align-items: center;
+}
+
+.advertising img {
+    width: 90%;
+    height: 40vh;
+}
+
+.advertising h3, p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+.advertising p a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.read-story {
+    position: relative;
+    margin-top: 10px;
+}
+
+.read-story::after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: .8px;
+    left: 0;
+    top: 22px;
+    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.read-story:hover::after {
+    animation: read-story .5s linear;
+}
+
+@keyframes read-story {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 65px;
+    }
+}
+
+.favourite-style h1{
+    margin: 50px 35px;
+    font-weight: 400;
+}
+
+article.favourite-style div {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px;
+}
+
+.favourite-style section img{
+    width: 100%;
+    height: 70vh;
+}
+
+.court-lite-white, .suede-sand, .essence-white {
+    position: relative;
+    flex: 1;
+    margin: 15px;
+}
+
+span {
+    text-decoration: line-through;
+    opacity: .5;
+    margin-right: 4px;
+}
+
+.discount-percentage {
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    opacity: .6;
+}
+
+.new-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card img, .new-shoe img {
+    width: 47vw;
+    height: 70vh;
+}
+
+.new-in a{
+    text-decoration: none;
+    color: #000;
+    line-height: 1.6;
+}
+
+.new-in p {
+    font-size: 14px;
+}
+
+.new-in h3 {
+    font-size: 14px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.etq-card h3::after {
+    content: "";
+    background-color: #000;
+    width: 110px;
+    height: 1px;
+    top: 22px;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.etq-card h3:hover::after {
+    visibility: visible;
+    animation: card .5s linear;
+}
+
+@keyframes card {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 110px;
+    }
+}
+
+.new-shoe h3::after {
+    content: "";
+    background-color: #000;
+    width: 57px;
+    height: 1px;
+    top: 22px;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.new-shoe h3:hover::after {
+    visibility: visible;
+    animation: shoe .5s linear;
+}
+
+@keyframes shoe {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 57px;
+    }
+}
+
+footer {
+    margin: 0 20px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer article {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    margin: 20vh 20px 5vh 20px;
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+.read-more {
+    position: relative;
+}
+
+.read-more::after {
+    content: "";
+    background-color: #000;
+    width: 11%;
+    height: 1px;
+    top: 21px;
+    left: 0;
+    position: absolute;
+}
+
+.read-more:hover::after {
+    animation: read-more .5s linear;
+}
+
+@keyframes read-more {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 11%;
+    }
+}
+
+.email, .number {
+    position: relative;
+}
+
+.email::after{
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.email:hover::after {
+    visibility: visible;
+    animation: email .5s linear;
+}
+
+@keyframes email {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+.number::after {
+    content: "";
+    background-color: #000;
+    height: 1px;
+    width: 48%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.number:hover::after {
+    visibility: visible;
+    animation: number .5s linear;
+}
+
+@keyframes number {
+    from {
+        width: 0;
+    }
+    to {
+        width: 48%;
+    }
+}
+
+.info p {
+    position: relative;
+}
+
+.shipping::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 1px;
+    width: 19%;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.shipping:hover::after {
+    visibility: visible;
+    animation: shipping .5s linear;
+}
+
+@keyframes shipping {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 19%;
+    }
+}
+
+.returns::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 1px;
+    width: 17%;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.returns:hover::after {
+    visibility: visible;
+    animation: returns .5s linear;
+}
+
+@keyframes returns {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 17%;
+    }
+}
+
+.wholesale::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 1px;
+    width: 22%;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.wholesale:hover::after {
+    visibility: visible;
+    animation: wholesale .5s linear;
+}
+
+@keyframes wholesale {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 22%;
+    }
+}
+
+.product-care::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 1px;
+    width: 28%;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.product-care:hover::after {
+    visibility: visible;
+    animation: product-care .5s linear;
+}
+
+@keyframes product-care {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 28%;
+    }
+}
+
+.store-locator::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 1px;
+    width: 29%;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.store-locator:hover::after {
+    visibility: visible;
+    animation: store-locator .5s linear;
+}
+
+@keyframes store-locator {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 29%;
+    }
+}
+
+.terms::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 1px;
+    width: 35%;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.terms:hover::after {
+    visibility: visible;
+    animation: terms .5s linear;
+}
+
+@keyframes terms {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 35%;
+    }
+}
+
+.follow p {
+    position: relative;
+}
+
+.instagram::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 22%;
+    height: 1px;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.instagram:hover::after {
+    visibility: visible;
+    animation: instagram .5s linear;
+}
+
+@keyframes instagram {
+    from {
+        width: 0;
+    }
+    to {
+        width: 22%;
+    }
+}
+
+.pinterest::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 19%;
+    height: 1px;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.pinterest:hover::after {
+    visibility: visible;
+    animation: pinterest .5s linear;
+}
+
+@keyframes pinterest {
+    from {
+        width: 0;
+    }
+    to {
+        width: 19%;
+    }
+}
+
+.tiktok::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 13%;
+    height: 1px;
+    top: 20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.tiktok:hover::after {
+    visibility: visible;
+    animation: tiktok .5s linear;
+}
+
+@keyframes tiktok {
+    from {
+        width: 0;
+    }
+    to {
+        width: 13%;
+    }
+}
+
+footer .extra-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 20px 20px;
+    font-size: 12px;
+}
+
+footer .terms-statements {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 10%;
+}
+
+.payment-gateways a {
+    padding-left: 10px;
+}
+
+.terms-statements p {
+    font-size: 8px;
+    position: relative;
+}
+
+.terms-and-conditions::after {
+    content: "";
+    background-color: #000;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    visibility: hidden;
+}
+
+.terms-and-conditions:hover::after {
+    visibility: visible;
+    animation: terms-and-conditions .5s linear;
+}
+
+@keyframes terms-and-conditions {
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.privacy-statements::after {
+    content: "";
+    background-color: #000;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    visibility: hidden;
+}
+
+.privacy-statements:hover::after {
+    visibility: visible;
+    animation: privacy-statements .5s linear;
+}
+
+@keyframes privacy-statements {
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 0 100px;
+    margin: 0 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+button {
+    border: 0;
+    background-color: #fff;
+    position: relative;
+}
+
+button::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 18px;
+    left: 0;
+}
+
+button:hover:after {
+    animation: submit .5s linear;
+}
+
+@keyframes submit {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.captcha-info {
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+}
+
+.captcha-info a {
+    color: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.captcha-info a::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 1px;
+    opacity: .2;
+    top: 15px;
+    left: 0;
+}
+
+.captcha-info a:hover::after {
+    animation: captcha .5s linear;
+}
+
+@keyframes captcha {
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+select {
+    margin: 20px;
+    width: 15%;
+    padding: 4px;
+    border: 0;
+}

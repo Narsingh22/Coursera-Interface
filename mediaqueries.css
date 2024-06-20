@@ -1,0 +1,216 @@
+@media screen and (max-width: 1440px) {
+    .width {
+        width: 95%;
+    }
+
+    div.categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #advice-opportunity {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #explore {
+        display: none;
+    }
+
+    #header-searchbar {
+        display: none;
+    }
+
+    #topbar-right {
+        display: none;
+    }
+
+    #topbar-left {
+        width: 100%;
+    }
+
+    #topbar {
+        padding-block-start: 20px;
+    }
+
+    #mediaquery-searchicon, #hamburger {
+        display: block;
+    }
+
+    #hamburger {
+        color: black;
+    }
+
+    .flexed-articles {
+        flex-wrap: wrap;
+    }
+
+    .block {
+        width: calc(50% - 10px);
+    }
+
+    section a>article {
+        display: flex;
+        padding-top: 10px;
+        height: 100%;
+    }
+
+    section a:nth-child(3) {
+        display: none;
+    }
+
+    section a:nth-child(4) {
+        display: none;
+    }
+
+    .article-images {
+        height: 80px;
+        width: 80px;
+    }
+
+    .details {
+        height: 100%;
+    }
+
+    #set-goals {
+        justify-content: start;
+    }
+
+    #advice-opportunity {
+        display: block;
+        width: 95%;
+    }
+
+    .advice-opportunity {
+        width: 100%;
+    }
+
+    #advice {
+        margin-bottom: 20px;
+    }
+
+    div.categories {
+        grid-template-columns: 1fr;
+    }
+
+    p.categories-courses {
+        padding: 8px 2rem;
+    }
+}
+
+@media screen and (max-width: 640px){
+    #footer-bar {
+        flex-wrap: wrap;
+    }
+
+    #copyrights {
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #mobile-app-heading {
+        display: none;
+    }
+
+    #learn-anywhere-heading {
+        display: block;
+    }
+
+    #follow-us-container {
+        display: block;
+        margin-bottom: 32px;
+    }
+
+    p#follow-us {
+        font-size: 18px;
+    }
+
+    #media {
+        margin-bottom: 32px;
+    }
+
+    #copyrights div:nth-child(2) {
+        order: 1;
+    }
+
+    #navbar nav ul {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px){
+    .item {
+        font-size: 12px;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    section a>article {
+        justify-content: space-between;
+    }
+
+    section a>article img {
+        order: 1;
+    }
+
+    .platforms p{
+        order: 1;
+    }
+
+    #how-to-use, #summer-enrollment {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    #advice-opportunity h3 {
+        font-size: 16px;
+    }
+
+    .nav-items ul li.item {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #navbar-items a>.item {
+        font-size: 10px;
+    }
+
+    #set-goals p, #set-goals a {
+        font-size: 12px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .institute-name {
+        font-size: 10px;
+    }
+
+    .specificity {
+        font-size: 12px;
+    }
+
+    .degree-hat p {
+        font-size: 10px;
+    }
+
+    .standard {
+        font-size: 10px;
+    }
+
+    .description {
+        display: none;
+    }
+}
