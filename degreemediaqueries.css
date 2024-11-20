@@ -1,0 +1,504 @@
+@media screen and (max-width: 1430px) {
+    .width {
+        max-width: 1120px;
+    }
+
+    #specification {
+        max-width: 1120px;
+    }
+
+    #menubar, #topbar{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #topbar {
+        max-width: 1300px;
+    }
+
+    #pathway-image img, #hec-paris-image img {
+        max-width: 540px;
+        max-height: 360px;
+    }
+
+    #image-slider-parent {
+        width: 1000px;
+    }
+
+    .applications-open {
+        width: 100%;
+    }
+
+    #events div {
+        width: 31%;
+    }
+
+    #questions {
+        width: 736px;
+    }
+
+    #more-questions {
+        display: flex;
+        align-items: center;
+        width: 352px;
+    }
+
+    .programs {
+        width: 31.78%;
+    }
+
+    #certificates .block {
+        width: 100%;
+    }
+
+    .article-images {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1130px) {
+    .width, #specification, #sixth-section, #eighth-section {
+        margin: auto 20px;
+    }
+
+    #menubar-parent, #explore, #header-searchbar, #topbar-right {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+        margin-right: 24px;
+        color: black;
+    }
+
+    #mediaquery-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mediaquery-searchicon {
+        display: block;
+        color: black;
+    }
+
+    #topbar-left {
+        width: 100%;
+    }
+    
+    #last-date {
+        text-align: center;
+    }
+
+    #image-slider {
+        max-width: 1000px;
+    }
+
+    #certificates {
+        gap: 26px;
+        margin: auto 2px;
+    }
+
+    .article-images {
+        width: 100%;
+    }
+
+    .programs {
+        width: 31.6%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #hec-intro {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        align-items: flex-start;
+    }
+
+    #hec-intro {
+        padding: 30px 0;
+    }
+
+    #hec-logo-course img {
+        width: 100px;
+    }
+
+    h1#course {
+        font-size: 26px;
+    }
+
+    #get-started {
+        margin-top: 90px;
+        width: 100%;
+    }
+
+    #specification {
+        display: none;
+    }
+
+    #second-section {
+        margin-top: 30px;
+    }
+
+    #institution-specification {
+        overflow: scroll;
+    }
+
+    #mediaquery-specification {
+        display: block;
+        margin-top: 10px    ;
+        margin-bottom: 80px;
+    }
+
+    #mediaquery-specification-children div {
+        border-bottom: 2px solid #0c0c0c38;
+        padding: 10px 0;
+    }
+
+    .mediaquery-none {
+        display: none;
+    }
+
+    .more-information {
+        font-size: 14px;
+        color: #0c0c0cab;
+    }
+
+    button#view-more, button#view-less {
+        background-color: transparent;
+        position: absolute;
+        right: 20px;
+        margin-top: 20px;
+        border: none;
+        font-size: 16px;
+        color: blue;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    button#view-more i, button#view-less i {
+        font-size: 22px;
+    }
+
+    button#view-more:hover, button#view-less:hover {
+        background-color: rgba(212, 208, 208, 0.39);
+        text-decoration: underline;
+    }
+
+    button#view-less {
+        display: none;
+    }
+
+    #develop-mindset {
+        display: block;
+    }
+
+    #develop h1 {
+        font-size: 16px;
+    }
+
+    #develop p, #develop ul li {
+        font-size: 14px;
+    }
+
+    #admission-pathway-container {
+        flex-direction: column;
+    }
+
+    div#admission-pathway {
+        order: 2;
+    }
+
+    #about-program {
+        display: block;
+    }
+
+    #pathway-image img {
+        width: 900px;
+        height: auto;
+    }
+
+    .boxes {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #program-admission {
+        border-right: 1px solid;
+        border-bottom: none;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    #program-student-experience {
+        border-left: 1px solid;
+        border-top: none;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0;
+    }
+
+    #image-slider-parent {
+        width: 600px;
+    }
+
+    #prev, #next {
+        top: 450px;
+    }
+
+    .active {
+        display: block;
+    }
+
+    #sixth-section {
+        display: block;
+        margin: 50px 30px;
+        font-size: 14px;
+    }
+
+    #career-forward h1 {
+        font-size: 15px;
+    }
+
+    .msc {
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+    .msc h3 {
+        margin-bottom: 10px;
+    }
+
+    #career-forward nav ul i {
+        margin-right: 50px;
+    }
+
+    #hec-paris {
+        flex-direction: column;
+    }
+
+    #about-hec-paris {
+        order: 2;
+    }
+
+    #hec-paris-applications div:nth-child(1) {
+        display: none;
+    }
+
+    #hec-paris-applications-parent {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    #hec-paris-application-buttons {
+        width: 100%;
+    }
+
+    #hec-paris-application-buttons button{
+        justify-content: space-between;
+        width: 50%;
+        padding: 14px 0;
+    }
+
+    #hec-apply-now {
+        order: 2;
+    }
+
+    #eighth-section {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+        gap: 0;
+    }
+
+    #eighth-section div:nth-child(1) {
+        order: 2;
+        width: 100%;
+    }
+
+    #eighth-section div:nth-child(2) {
+        width: 100%;
+    }
+
+    #eighth-section img {
+        width: 650px;
+        height: 440px;
+    }
+
+    #events div {
+        width: 48.5%;
+    }
+
+    #programs-parent {
+        justify-content: space-between;
+        gap: 0; 
+    }
+
+    .programs {
+        width: 48.5%;
+        height: 21vh;
+        margin-bottom: 26px;
+    }
+
+    .programs h4 {
+        font-size: 13px;
+    }
+
+    .program-details {
+        font-size: 12px;
+    }
+
+    #certificates {
+        flex-wrap: wrap;
+    }
+
+    #mediaquery-third-article {
+        display: none;
+    }
+
+    #certificates .block {
+        width: 47%;
+    }
+
+    .article-images {
+        width: 100%;
+        height: 250px;
+    }
+
+    button#one-more {
+        display: block;
+    }
+
+    #questions-parent {
+        display: block;
+    }
+
+    #questions, #more-questions {
+        width: 100%;
+        border: none;
+    }
+
+    #more-questions {
+        border: 1px solid;
+    }
+
+    #fourteenth-section {
+        display: none;
+    }
+
+    #copyrights {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    h1#course {
+        font-size: 24px;
+    }
+
+    #mediaquery-second-article, .article-images, button#one-more {
+        display: none;
+    }
+
+    #image-slider-parent {
+        width: 400px;
+    }
+
+    #certificates, button#two-more {
+        display: block;
+    }
+
+    #certificates .block {
+        width: 100%;
+        border: none;
+    }
+
+    #certificates article {
+        border-radius: 14px;
+        border: 0.5px solid rgb(233, 224, 224);
+    }
+
+    #events {
+        display: block;
+    }
+
+    #events div {
+        width: 100%;
+    }
+
+    #programs-parent {
+        display: block;
+    }
+
+    .programs {
+        width: 100%;
+    }
+
+    .programs h4 {
+        font-size: 15px;
+    }
+
+    #footer-list {
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    #footer-list nav, #mobile-app {
+        width: 185px;
+    }
+
+    footer hr {
+        display: none;
+    }
+
+    #copyrights {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 60px;
+        margin-top: 100px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #copyrights-statement {
+        order: 2;
+        margin-top: 16px;
+    }
+
+    .divs img {
+        width: 300px;
+        height: 400px;
+    }
+} 
+
+@media screen and (max-width: 440px) {
+    #image-slider-parent {
+        max-width: 300px;
+    }
+
+    #prev, #next {
+        top: 350px;
+    }
+
+    .divs {
+        padding: 0;
+    }
+
+    .divs img {
+        max-width: 300px;
+        height: 230px;
+    }
+
+    .divs>div i {
+        font-size: 40px;
+    }
+
+    .motto, .intro {
+        font-size: 16px;
+        width: 200px;
+        margin: auto;
+    }
+}

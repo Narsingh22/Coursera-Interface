@@ -129,7 +129,13 @@
     }
 
     #media {
-        margin-bottom: 32px;
+        margin-bottom: 32px;#certificates article {
+            width: 295px;
+        }
+    
+        .article-images {
+            width: 280px;
+        }
     }
 
     #copyrights div:nth-child(2) {

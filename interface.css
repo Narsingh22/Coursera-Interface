@@ -355,7 +355,7 @@ section a>article {
 section a>article:hover:not(#opportunity, #advice) {
     transform: scale(1.01);
     z-index: 2;
-    box-shadow: .8px .8px  3px rgba(0, 0, 0, 0.8);
+    box-shadow: .8px .8px  3px 3px rgba(0, 0, 0, 0.8);
 }
 
 div.categories {
